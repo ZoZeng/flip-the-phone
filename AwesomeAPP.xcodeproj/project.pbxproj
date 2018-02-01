@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023793C61DD125FD005907AD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023793C51DD125FD005907AD /* Model.swift */; };
+		027DC2C31DC9985A007C4068 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 027DC2C21DC9985A007C4068 /* CoreMotion.framework */; };
+		028DD6791DCAE24600D55294 /* ViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028DD6781DCAE24600D55294 /* ViewC.swift */; };
 		02C42DE01DB7D3040041CD3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C42DDF1DB7D3040041CD3C /* AppDelegate.swift */; };
 		02C42DE21DB7D3040041CD3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C42DE11DB7D3040041CD3C /* ViewController.swift */; };
 		02C42DE51DB7D3040041CD3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02C42DE31DB7D3040041CD3C /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		023793C51DD125FD005907AD /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = ../Model.swift; sourceTree = "<group>"; };
+		027DC2C21DC9985A007C4068 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		028DD6781DCAE24600D55294 /* ViewC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewC.swift; sourceTree = "<group>"; };
 		02C42DDC1DB7D3040041CD3C /* AwesomeAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02C42DDF1DB7D3040041CD3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02C42DE11DB7D3040041CD3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				027DC2C31DC9985A007C4068 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +84,7 @@
 		02C42DD31DB7D3040041CD3C = {
 			isa = PBXGroup;
 			children = (
+				027DC2C21DC9985A007C4068 /* CoreMotion.framework */,
 				02C42DDE1DB7D3040041CD3C /* AwesomeAPP */,
 				02C42DF31DB7D3040041CD3C /* AwesomeAPPTests */,
 				02C42DFE1DB7D3040041CD3C /* AwesomeAPPUITests */,
@@ -97,8 +105,10 @@
 		02C42DDE1DB7D3040041CD3C /* AwesomeAPP */ = {
 			isa = PBXGroup;
 			children = (
+				023793C51DD125FD005907AD /* Model.swift */,
 				02C42DDF1DB7D3040041CD3C /* AppDelegate.swift */,
 				02C42DE11DB7D3040041CD3C /* ViewController.swift */,
+				028DD6781DCAE24600D55294 /* ViewC.swift */,
 				02C42DE31DB7D3040041CD3C /* Main.storyboard */,
 				02C42DE61DB7D3040041CD3C /* Assets.xcassets */,
 				02C42DE81DB7D3040041CD3C /* LaunchScreen.storyboard */,
@@ -193,6 +203,7 @@
 				TargetAttributes = {
 					02C42DDB1DB7D3040041CD3C = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5EETJJ8GAS;
 					};
 					02C42DEF1DB7D3040041CD3C = {
 						CreatedOnToolsVersion = 7.2;
@@ -257,7 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				02C42DE21DB7D3040041CD3C /* ViewController.swift in Sources */,
+				028DD6791DCAE24600D55294 /* ViewC.swift in Sources */,
 				02C42DE01DB7D3040041CD3C /* AppDelegate.swift in Sources */,
+				023793C61DD125FD005907AD /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,10 +410,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AwesomeAPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Shihang-Zeng.AwesomeAPP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -408,10 +424,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AwesomeAPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Shihang-Zeng.AwesomeAPP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -482,6 +501,7 @@
 				02C42E061DB7D3040041CD3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02C42E071DB7D3040041CD3C /* Build configuration list for PBXNativeTarget "AwesomeAPPTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +510,7 @@
 				02C42E091DB7D3040041CD3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02C42E0A1DB7D3040041CD3C /* Build configuration list for PBXNativeTarget "AwesomeAPPUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +519,7 @@
 				02C42E0C1DB7D3040041CD3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
